@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="972" viewBox="0 0 1366 972">
+  <image width="1366" height="972" xlink:href="overblik-trans.png"/>
+  <a xlink:href="../../shelter.html" target="_parent" cursor="pointer">
+  <rect x="320.5046" y="180.9725" width="233.8349" height="292.2936" fill="#fff" opacity="0"/>
+  </a>
+  <a xlink:href="../../beach.html" target="_parent" cursor="pointer">
+  <rect x="412.6514" y="473.2661" width="208.0734" height="256.6239" fill="#fff" opacity="0"/>
+  </a>
+  <a xlink:href="../../beach.html" target="_parent" cursor="pointer">
+  <rect x="278.8899" y="586.2202" width="133.7615" height="42.6055" fill="#fff" opacity="0"/>
+   </a>
+    <a xlink:href="../../forrest.html" target="_parent" cursor="pointer" >
+  <rect x="262.0917" y="87.7064" width="282.3853" height="197.1743" transform="translate(413.5704 262.368) rotate(-4.521)" fill="#fff" opacity="0"/>
+   </a>
+   <a xlink:href="../../forrest.html" target="_parent" cursor="pointer">
+  <rect x="754.4862" y="514.8807" width="146.6422" height="48.5505" fill="#fff" opacity="0"/>
+   </a>
+    <a xlink:href="../../photo-album.html" target="_parent" cursor="pointer">
+  <rect x="689.0917" y="170.0734" width="273.4679" height="88.1835" fill="#fff" opacity="0"/>
+   </a>
+    <a xlink:href="../../shelter.html" target="_parent" cursor="pointer">
+  <rect x="554.3394" y="327.1193" width="121.8716" height="61.9266" fill="#fff" opacity="0"/>
+   </a>
+</svg>

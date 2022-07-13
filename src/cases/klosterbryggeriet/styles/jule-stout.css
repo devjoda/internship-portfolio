@@ -1,0 +1,314 @@
+/* 
+-------------------------------------------
+MAIN
+-------------------------------------------
+*/
+
+#main-content {
+  background-color: var(--dark-red);
+}
+
+/* article */
+
+article#jule-stout-detailed-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+article#jule-stout-detailed-presentation h1 {
+  margin: 6rem 0 5rem;
+}
+
+/* sections */
+
+section.flavor-metrics,
+section.about,
+section.testimonial,
+div.merry-christmas {
+  padding: 6.25rem 1rem 0;
+}
+
+section.quick-overview {
+  padding: 0 1rem 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+img#jule-stout-product-image,
+img#jule-stout-flavor-metrics {
+  width: 100%;
+  height: auto;
+}
+
+img#jule-stout-flavor-metrics {
+  padding-top: 6.25rem;
+  max-width: 345px;
+}
+
+section.quick-overview p {
+  font-size: 1.125rem;
+}
+
+section.quick-overview div.ingredients-wrapper {
+  padding: 32.5px 0 0;
+  font-family: "Vollkorn SC", serif;
+}
+
+section.quick-overview div.ingredients-wrapper p {
+  font-family: "Vollkorn SC", serif;
+  color: var(--gold);
+}
+section.quick-overview div.ingredients-wrapper p:not(:first-child) {
+  padding-top: 1rem;
+}
+
+/* main coat of arms */
+div.coat-of-arms-master-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+div.coat-of-arms-wrapper {
+  max-width: 420px;
+  padding: 0;
+}
+
+div.description-container,
+div.nutritional-info-container {
+  padding-top: 50px;
+}
+
+div#jule-stout-description-coat-of-arms-container
+  .bottom-rectangle-horizontal
+  .wrapper {
+  margin: 0 25px 75px;
+}
+
+div#jule-stout-description-coat-of-arms-container h2 {
+  color: var(--dark-red);
+  font-weight: 600;
+}
+
+div#jule-stout-description-coat-of-arms-container h3 {
+  font-family: "Raleway", sans-serif;
+  color: var(--gold);
+  text-transform: none;
+  font-weight: 700;
+}
+
+div#jule-stout-description-coat-of-arms-container p.description-paragraph {
+  letter-spacing: 1.1px;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+
+p#nutritional-value {
+  line-height: 20px;
+}
+
+div.two-column-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+div.two-column-container:not(:last-of-type) {
+  padding-top: 1rem;
+}
+
+div.bottom-rectangle-horizontal {
+  display: block;
+  text-align: left;
+}
+
+div.bottom-rectangle-horizontal p {
+  font-weight: 300;
+}
+
+section.testimonial {
+  max-width: 500px;
+}
+
+div.merry-christmas {
+  margin-bottom: 6.25rem;
+}
+
+/* mini coat of arms/våbenskjolds container */
+
+#mini-coat-of-arms-container-11,
+#mini-coat-of-arms-container-12,
+#mini-coat-of-arms-container-13,
+#mini-coat-of-arms-container-14,
+#mini-coat-of-arms-container-15,
+#mini-coat-of-arms-container-16 {
+  margin: 0;
+  padding: 0;
+}
+
+#mini-coat-of-arms-container-11 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  width: auto;
+  background: url("../images/monks/mini-coat-of-arms/en-munk-nyder-et-glas-oel-i-kaelderen-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-12 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  background: url("../images/monks/mini-coat-of-arms/en-munk-sidder-og-drikker-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-13 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  width: auto;
+  background: url("../images/monks/mini-coat-of-arms/tre-munke-spiser-og-skaaler-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-14 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  background: url("../images/monks/mini-coat-of-arms/tre-munke-ved-oel-toender-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-15 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  background: url("../images/monks/mini-coat-of-arms/smilende-munk-ved-tønde-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-16 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  background: url("../images/monks/mini-coat-of-arms/munk-som-snitter-i-loeg-250w.png")
+    center center / cover no-repeat;
+}
+
+div.mini-coat-of-arms-container {
+  display: none;
+  width: 12.5rem;
+}
+
+div.mini-coat-of-arms-container div.empty-rectangle-horizontal {
+  height: 0.625rem;
+}
+
+div.mini-coat-of-arms-container div.empty-rectangle-vertical {
+  width: 2.375rem;
+}
+
+div.mini-coat-of-arms-container div.top-rectangle-horizontal {
+  height: 1.125rem;
+}
+
+div.mini-coat-of-arms-container div.bottom-rectangle-horizontal {
+  height: 3rem;
+}
+
+/* testimonial */
+
+section.testimonial {
+  text-align: left;
+  font-size: 20px;
+}
+
+section.testimonial figure figcaption {
+  padding-top: 1rem;
+  text-align: right;
+  font-family: "Vollkorn SC", serif;
+  text-transform: lowercase;
+  line-height: 30px;
+}
+
+section.testimonial blockquote {
+  line-height: 30px;
+  padding: 2rem 1rem 2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+section.testimonial img {
+  padding-left: 1rem;
+}
+
+@media only screen and (min-width: 377px) {
+  div#jule-stout-description-coat-of-arms-container
+    div.top-rectangle-horizontal {
+    min-width: 21.5625rem;
+  }
+
+  div.mini-coat-of-arms-wrapper-left,
+  div.mini-coat-of-arms-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  div.mini-coat-of-arms-container {
+    display: block;
+  }
+
+  div#jule-stout-description-coat-of-arms-container {
+    margin: 0 120px 0;
+  }
+
+  div#jule-stout-description-coat-of-arms-container {
+    width: 26.25rem;
+  }
+
+  div.coat-of-arms-wrapper h2,
+  div.ingredients-wrapper div.title-container h3 {
+    font-size: 1.5625rem;
+  }
+
+  div.coat-of-arms-wrapper div.middle-rectangle-horizontal p {
+    font-size: 1.375rem;
+  }
+
+  article#jule-stout-detailed-presentation {
+    margin-top: 6.25rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 530px 530px;
+    grid-template-rows: 110px 650px 300px 1450px 400px 150px;
+  }
+
+  article#jule-stout-detailed-presentation h1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+
+  section.quick-overview {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  section.flavor-metrics {
+    padding: 0;
+    justify-self: flex-end;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  section.about {
+    padding: 0;
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+  }
+
+  section.testimonial {
+    padding: 0;
+    justify-self: flex-start;
+  }
+
+  div.merry-christmas {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+    padding: 0;
+  }
+}

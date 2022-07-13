@@ -1,0 +1,272 @@
+/* 
+-------------------------------------------
+MAIN
+-------------------------------------------
+*/
+
+/* Sætter munkenes jul hero baggrundsbillede og beregner højden ved at trække header height fra */
+
+.hero-image-container {
+  background: url("../images/munkenes-jul/hero/munkenes-jul-hero-375w.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: calc(100vh - 202px);
+}
+
+.hero-image-container span {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
+  border-left: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#main-content {
+  background-color: var(--dark-red);
+}
+
+/* article */
+
+article#monks-christmas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+article#monks-christmas {
+  margin: 6rem 0 5rem;
+}
+
+/* section */
+
+section h2 {
+  margin-top: 50px;
+}
+
+p.desktop-description-paragraph {
+  display: none;
+}
+
+.shape {
+  display: none;
+  padding: 5px 0 50px;
+  shape-outside: url("../images/munkenes-jul/munke-i-kaelderen-945w.png");
+  shape-image-threshold: 0.5;
+  shape-margin: 21.5px;
+  float: left;
+}
+
+#munkenes-julebryg {
+  clear: both;
+}
+
+div.mobile-image-container {
+display: flex;
+justify-content: center;
+padding-top: 25px;
+}
+/* main coat of arms */
+div.coat-of-arms-master-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+div.coat-of-arms-wrapper {
+  max-width: 420px;
+  padding: 0;
+}
+
+div#monks-christmas-coat-of-arms-container
+  .bottom-rectangle-horizontal
+  .wrapper {
+  margin: 0 25px 75px;
+}
+
+div#monks-christmas-coat-of-arms-container h1 {
+  color: var(--dark-red);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+div#monks-christmas-coat-of-arms-container h2 {
+  font-family: "Raleway", sans-serif;
+  color: var(--gold);
+  text-transform: none;
+  font-weight: 700;
+}
+
+#monks-christmas-coat-of-arms-container p.mobile-description-paragraph, #monks-christmas-coat-of-arms-container p.desktop-description-paragraph {
+  padding-top: 25px;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  line-height: 2rem;
+}
+
+p.mobile-description-paragraph:first-of-type, p.desktop-description-paragraph:first-of-type {
+  padding-top:10px;
+}
+
+div.bottom-rectangle-horizontal {
+  display: block;
+  text-align: left;
+}
+
+div.top-coat-of-arms-container div.top-rectangle-horizontal {
+height: 89px;
+}
+
+div.top-coat-of-arms-container div.top-rectangle-horizontal div.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+div.top-coat-of-arms-container div.top-rectangle-horizontal div.wrapper p {
+  color: var(--dark-red);
+  font-weight: 400;
+}
+
+div.grid-image-container {
+  display: none;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 170px);
+  grid-template-rows: repeat(1, 170px);
+  height: 170px;
+  gap: 2rem;
+  margin-top: 2rem;
+
+}
+
+div.grid-image-item-1 {
+  background: url('../images/munkenes-jul/mosaic/en-munk-nyder-et-glas-oel-i-kaelderen-170w.png')
+}
+
+div.grid-image-item-2 {
+  background: url('../images/munkenes-jul/mosaic/en-munk-sidder-og-drikker-170w.png')
+}
+
+div.grid-image-item-3 {
+  background: url('../images/munkenes-jul/mosaic/en-munk-straekker-mave-170w.png')
+}
+
+div.grid-image-item-4 {
+  background: url('../images/munkenes-jul/mosaic/munkekokke-med-kylling-170w.png')
+}
+
+div.grid-image-item-5 {
+  background: url('../images/munkenes-jul/mosaic/munk-i-gyngestol-170w.png')
+}
+
+div.grid-image-item-6 {
+  background: url('../images/munkenes-jul/mosaic/munk-kigger-i-oelkrus-170w.png')
+}
+
+div.grid-image-item-7 {
+  background: url('../images/munkenes-jul/mosaic/munk-med-oel-og-mad-170w.png')
+}
+
+div.grid-image-item-8 {
+  background: url('../images/munkenes-jul/mosaic/munk-som-snitter-i-loeg-170w.png')
+}
+
+div.grid-image-item-9 {
+  background: url('../images/munkenes-jul/mosaic/tre-munke-ved-oel-toender-170w.png')
+}
+
+div.grid-image-item-10 {
+  background: url('../images/munkenes-jul/mosaic/sort-klaedt-munk-nipper-til-oel-170w.png')
+}
+
+div.grid-image-item-11 {
+  background: url('../images/munkenes-jul/mosaic/tre-munke-spiller-kort-170w.png')
+}
+
+div.grid-image-item-12 {
+  background: url('../images/munkenes-jul/mosaic/tre-munke-spiser-og-skaaler-170w.png')
+}
+
+div.grid-image-item-13 {
+  background: url('../images/munkenes-jul/mosaic/smilende-munk-ved-tønde-170w.png')
+}
+
+/* merry-christmas */
+
+div.merry-christmas {
+  padding: 150px 0 150px;
+}
+
+@media only screen and (min-width: 377px) {
+  div#monks-christmas-coat-of-arms-container
+    div.top-rectangle-horizontal {
+    min-width: 21.5625rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-image-container {
+    background: url("../images/munkenes-jul/hero/munkenes-jul-hero-1920w.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    .hero-image-container {
+      height: calc(100vh - 217px);
+    }
+
+    div.coat-of-arms-wrapper {
+      max-width: 1035px;
+    }
+
+    .top-rectangle-horizontal p {
+      font-size: 18px;
+    }
+    section {
+      padding-bottom: 25px;
+    }
+    div#monks-christmas-coat-of-arms-container h1 { 
+      font-size: 38px;
+    }
+
+    div#monks-christmas-coat-of-arms-container h2 {
+      margin-top: 25px;
+      font-weight: normal;
+      font-size: 2.375rem;
+      line-height: 60px;
+      letter-spacing: 5px;
+      font-family: 'Pirata One', cursive;
+    }
+
+    p#shapes-paragraph {
+      line-height: 40px;
+      word-spacing: 5px;
+      letter-spacing: 1.5px;
+    }
+
+    div.mobile-image-container, p.mobile-description-paragraph {
+      display: none;
+    }
+
+    .shape, #monks-christmas-coat-of-arms-container p.desktop-description-paragraph {
+      line-height: 40px;
+      display: block;
+    }
+
+    div.grid-image-container {
+      display: grid;
+    }
+  }
+}

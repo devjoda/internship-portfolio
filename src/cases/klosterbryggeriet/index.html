@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+
+<head>
+    <meta charset="UTF-8" />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script
+    ><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description"
+        content="Klosterbryggeriet præsenterer Økologisk Jul og Jule Stout. God julebryg lavet på økologi og lokale råvarer." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link href="styles/eric-meyers-reset.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/julebryg.css" rel="stylesheet" />
+    <title>Klosterbryggeriet - Julebryg</title>
+    <base href="/src/cases/klosterbryggeriet/">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav id="top-nav">
+            <div class="logo-container">
+                <a href="index.html">
+                    <!-- Det lille logo (45px bredde) skifter til stort logo (60px bredde) gn. media query, når det når
+                    en max width på 1366px, hvis srcset ikke er understøttet falder den tilbage til src med det 
+                    det mindste logo -->
+                    <img srcset="images/icons/logo/logo-45w.png 45w, images/icons/logo/logo-60w.png 60w"
+                        sizes="(max-width: 1366px) 45px, 60px" src="images/icons/logo/logo-45w.png"
+                        alt="Klosterbryggeriet Logo">
+                </a>
+            </div>
+            <div class="burger-container">
+                <a href="#bottom-nav">
+                    <img src="images/icons/navigation/burger-menu-33w.png" alt="Gylden burger menu">
+                </a>
+            </div>
+
+            <div class="desktop-nav-container">
+                <ul>
+                    <li><a id="dropdown-anchor" href="index.html">julebryg</a>
+                        <ul class="dropdown">
+                            <li><a href="oekologisk-jul.html">økologisk jul</a></li>
+                            <li><a href="jule-stout.html">jule stout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="julekonkurrence.html">julekonkurrence</a></li>
+                    <li><a href="forhandlere.html">forhandlere</a></li>
+                    <li id="last-anchor"><a href="munkenes-jul.html">munkenes jul</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="presentation-paragraph-container">
+            <!-- Oprindeligt have jeg denne del som en h1'er i <main>, men blev ændret til en paragraph, 
+            dels for jeg ikke synes "Klosterbryggeriet præsenterer" passer så godt som overskrift 
+            i HTML-outlinen, og dels i forhold til den besøgende siger overskriften ikke så meget. Det 
+            er mere branding og introducerende indhold som skal fange besøgerens opmærksomhed eller 
+            sætte en bestemt tone. Passede også bedre ift. de senere sider, så h1'eren ikke indeholdte 
+            klosterbryggeriet på dem alle sammen. Valgte samme approach til øvrige sider. Placerede den i 
+            headeren, da headeren iflg. w3c er beregnet til introducerende indhold (udover navigation) -->
+            <p>Klosterbryggeriet</p>
+            <p>præsenterer</p>
+        </div>
+        <hr>
+        <a href="#christmas-beer-intro">
+            <div class="hero-image-container">
+                <span></span>
+            </div>
+        </a>
+        <hr>
+    </header>
+
+    <main id="main-content">
+        <div id="snow-wrapper">
+            <header id="christmas-beer-intro">
+                <div id="christmas-beer-intro-wrapper">
+                    <div>
+                        <h1>De sagnomspundne <br><span class="gold">KB | Julebryg</span></h1>
+                        <!-- nedenstående ønskes ikke i HTML outlinen, så indgår som paragraphs.
+                                        man kunne også have brugt hgroup, men den er blevet fjernet
+                                        fra html5 specifikationen -->
+                        <p>lavet på</p>
+                        <a href="munkenes-jul.html">
+                            <img srcset="images/julebryg/cistercienserordenen-emblem-268w.png 268w, images/julebryg/cistercienserordenen-emblem-322w.png 322w"
+                                sizes="(max-width: 1366px) 268px, 322px"
+                                src="images/julebryg/cistercienserordenen-emblem-322w.png"
+                                alt="Oliemaleri af Eduard von Grützner, som portrætterer en smilende munk med en nøgle">
+                        </a>
+                        <p id="secret-recipe"><span class="striked-through">hemmelige</span> opskrifter</p>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <article id="oekologisk-jul-intro">
+            <div class="coat-of-arms-master-wrapper">
+                <!-- venstre mini våbenskjoldscontainer start -->
+                <div id="mini-coat-of-arms-container-1" class="coat-of-arms-wrapper">
+                    <div class="mini-coat-of-arms-container">
+                        <!-- top -->
+                        <div class="top-coat-of-arms-container">
+                            <div class="empty-rectangle-horizontal"></div>
+                            <div class="top-rectangle-horizontal"></div>
+                            <div class="empty-rectangle-horizontal"></div>
+                        </div>
+                        <!-- middle -->
+                        <div class="middle-coat-of-arms-container">
+                            <div class="empty-rectangle-vertical"></div>
+                            <div class="wrapper">
+                                <div class="coat-of-arms-image-container"></div>
+                            </div>
+                            <div class="empty-rectangle-vertical"></div>
+                        </div>
+                        <!-- bottom -->
+                        <div class="bottom-coat-of-arms-container">
+                            <div class="bottom-rectangle-horizontal"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mini våbenskjoldscontainer slut -->
+
+                <a href="oekologisk-jul.html">
+                    <!-- økologisk jul våbenskjoldscontainer start -->
+                    <div class="coat-of-arms-wrapper" id="oekologisk-jul-coat-of-arms-container">
+                        <!-- top -->
+                        <div class="top-coat-of-arms-container">
+                            <div class="empty-rectangle-horizontal"></div>
+                            <div class="top-rectangle-horizontal">
+                                <h2>KB | <span class="semibold">Økologisk Jul</span></h2>
+                            </div>
+                            <div class="empty-rectangle-horizontal"></div>
+                        </div>
+                        <!-- middle -->
+                        <div class="middle-coat-of-arms-container">
+                            <div class="empty-rectangle-vertical"></div>
+                            <div class="wrapper">
+                                <div class="coat-of-arms-image-container"></div>
+                                <div class="middle-rectangle-horizontal">
+                                    <p>Den ravfarvede</p>
+                                </div>
+                            </div>
+                            <div class="empty-rectangle-vertical"></div>
+                        </div>
+                        <!-- bottom -->
+                        <div class="bottom-coat-of-arms-container">
+                            <div class="bottom-rectangle-horizontal">
+                                <p>En belgisk-inspireret overgæret juleale med
+                                    en <span class="gold"><span class="bold">sød og krydret aroma</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- økologisk jul våbenskjoldscontainer slut -->
+                </a>
+
+                <!-- højre mini våbenskjoldscontainer start -->
+                <div id="mini-coat-of-arms-container-2" class="coat-of-arms-wrapper">
+                    <div class="mini-coat-of-arms-container">
+                        <!-- top -->
+                        <div class="top-coat-of-arms-container">
+                            <div class="empty-rectangle-horizontal"></div>
+                            <div class="top-rectangle-horizontal"></div>
+                            <div class="empty-rectangle-horizontal"></div>
+                        </div>
+                        <!-- middle -->
+                        <div class="middle-coat-of-arms-container">
+                            <div class="empty-rectangle-vertical"></div>
+                            <div class="wrapper">
+                                <div class="coat-of-arms-image-container"></div>
+                            </div>
+                            <div class="empty-rectangle-vertical"></div>
+                        </div>
+                        <!-- bottom -->
+                        <div class="bottom-coat-of-arms-container">
+                            <div class="bottom-rectangle-horizontal"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mini våbenskjoldscontainer slut -->
+            </div>
+
+
+            <!-- marketingshook. jeg overvejede at give den sin egen aside, men jeg vurderede dog, 
+                    at indholdet er for tæt knyttet til de øvrige elementer, så jeg valgte bare
+                    en div container i ingrediens sektionen -->
+            <div class="marketing-quote">
+                <p>Hos klosterbryggeriet</p>
+                <p>går vi op i</p>
+                <p class="marketing-hook">økologi</p>
+            </div>
+            <div class="ingredients-wrapper">
+                <hr>
+                <div class="title-container">
+                    <!-- vælger at bruge en h3 her, så den er et trin længere nede i hierakiet end 'økologisk jul'-heading'en  -->
+                    <div>
+                        <h3>Ingredienser</h3>
+                    </div>
+                </div>
+                <!-- Ville gerne have lave en container ligesom våbenskjoldscontaineren,
+                    så de nederste billeder kunne strække sig løbende, men besluttede mig for bare 
+                    at det var bedre at vente med det til senere, og bare lade den skifte til
+                    desktop-designet gennem media queries  -->
+
+                <a href="oekologisk-jul.html">
+                    <img class="christmas-beer-ingredients"
+                        srcset="images/julebryg/ingredienser/oekologisk-jul-ingredienser-ingefaer-appelsin-kanel-345w.png 345w, images/julebryg/ingredienser/oekologisk-jul-ingredienser-ingefaer-appelsin-kanel-1061w.png 1058w"
+                        sizes="(max-width: 1366px) 345px, 1061px"
+                        src="images/julebryg/ingredienser/oekologisk-jul-ingredienser-ingefaer-appelsin-kanel-1061w.png"
+                        alt="Ingredienserne ingefær, appelsin og kanel indeholdt i klosterbryggeriets julebryg økologisk jul">
+                </a>
+
+
+                <p id="oekologisk-jul-ingredient-description">ØKOLOGISK JUL er brygget på <span class="gold"><span
+                            class="bold">ingefær appelsin</span></span> og
+                    <span class="gold"><span class="bold">kanel</span></span></p>
+            </div>
+            <hr>
+        </article>
+        <article id="jule-stout-intro">
+            <div class="coat-of-arms-master-wrapper">
+
+                <!-- venstre mini våbenskjoldscontainer start -->
+                <div id="mini-coat-of-arms-container-3" class="coat-of-arms-wrapper">
+                    <div class="mini-coat-of-arms-container">
+                        <!-- top -->
+                        <div class="top-coat-of-arms-container">
+                            <div class="empty-rectangle-horizontal"></div>
+                            <div class="top-rectangle-horizontal"></div>
+                            <div class="empty-rectangle-horizontal"></div>
+                        </div>
+                        <!-- middle -->
+                        <div class="middle-coat-of-arms-container">
+                            <div class="empty-rectangle-vertical"></div>
+                            <div class="wrapper">
+                                <div class="coat-of-arms-image-container"></div>
+                            </div>
+                            <div class="empty-rectangle-vertical"></div>
+                        </div>
+                        <!-- bottom -->
+                        <div class="bottom-coat-of-arms-container">
+                            <div class="bottom-rectangle-horizontal"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mini våbenskjoldscontainer slut -->
+
+                <a href="jule-stout.html">
+                    <!-- jule stout våbenskjoldscontainer start -->
+                    <div class="coat-of-arms-wrapper" id="jule-stout-coat-of-arms-container">
+                        <!-- top -->
+                        <div class="top-coat-of-arms-container">
+                            <div class="empty-rectangle-horizontal"></div>
+                            <div class="top-rectangle-horizontal">
+                                <h2>KB | <span class="semibold">Jule Stout</span></h2>
+                            </div>
+                            <div class="empty-rectangle-horizontal"></div>
+                        </div>
+                        <!-- middle -->
+                        <div class="middle-coat-of-arms-container">
+                            <div class="empty-rectangle-vertical"></div>
+                            <div class="wrapper">
+                                <div class="coat-of-arms-image-container"></div>
+                                <div class="middle-rectangle-horizontal">
+                                    <p>Den mørke</p>
+                                </div>
+                            </div>
+                            <div class="empty-rectangle-vertical"></div>
+                        </div>
+                        <!-- bottom -->
+                        <div class="bottom-coat-of-arms-container">
+                            <div class="bottom-rectangle-horizontal">
+                                <p>En velduftende stoutale med en <span class="gold"><span class="bold">fantastisk
+                                            smag
+                                            livlighed og fylde</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jule stout våbenskjoldscontainer slut -->
+                </a>
+
+                <!-- højre mini våbenskjoldscontainer start -->
+                <div id="mini-coat-of-arms-container-4" class="coat-of-arms-wrapper">
+                    <div class="mini-coat-of-arms-container">
+                        <!-- top -->
+                        <div class="top-coat-of-arms-container">
+                            <div class="empty-rectangle-horizontal"></div>
+                            <div class="top-rectangle-horizontal"></div>
+                            <div class="empty-rectangle-horizontal"></div>
+                        </div>
+                        <!-- middle -->
+                        <div class="middle-coat-of-arms-container">
+                            <div class="empty-rectangle-vertical"></div>
+                            <div class="wrapper">
+                                <div class="coat-of-arms-image-container"></div>
+                            </div>
+                            <div class="empty-rectangle-vertical"></div>
+                        </div>
+                        <!-- bottom -->
+                        <div class="bottom-coat-of-arms-container">
+                            <div class="bottom-rectangle-horizontal"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mini våbenskjoldscontainer slut -->
+
+            </div>
+            <div class="marketing-quote">
+                <p>Hos klosterbryggeriet</p>
+                <p>bruger vi</p>
+                <p class="marketing-hook">lokale</p>
+                <p class="marketing-hook">råvarer</p>
+            </div>
+            <div class="ingredients-wrapper">
+                <hr>
+                <div class="title-container">
+                    <div>
+                        <h3>Ingredienser</h3>
+                    </div>
+                </div>
+
+                <a href="jule-stout.html">
+                    <img class="christmas-beer-ingredients"
+                        srcset="images/julebryg/ingredienser/jule-stout-ingredienser-chokolade-malt-kanel-345w.png 345w, images/julebryg/ingredienser/jule-stout-ingredienser-chokolade-malt-kanel-1058w.png 1058w"
+                        sizes="(max-width: 1366px) 345px, 1058px"
+                        src="images/julebryg/ingredienser/jule-stout-ingredienser-chokolade-malt-kanel-1058w.png"
+                        alt="Ingredienserne chokolade, malt og kanel indeholdt i klosterbryggeriets julebryg jule stout">
+                </a>
+
+                <p>JULE STOUT er brygget på <span class="gold"><span class="bold">mørk chokolade specialristet
+                            malt</span></span> og
+                    <span class="gold"><span class="bold">kanel</span></span></p>
+            </div>
+        </article>
+
+    </main>
+    <nav id="bottom-nav">
+        <div class="mobile-nav-container">
+            <ul>
+                <li><a href="index.html">julebryg</a></li>
+                <li><a href="oekologisk-jul.html">økologisk jul</a></li>
+                <li><a href="jule-stout.html">jule stout</a></li>
+                <li><a href="julekonkurrence.html">julekonkurrence</a></li>
+                <li><a href="forhandlere.html">forhandlere</a></li>
+                <li><a href="munkenes-jul.html">munkenes jul</a></li>
+            </ul>
+        </div>
+    </nav>
+    <footer id="main-footer">
+        <hr>
+        <div id="footer-wrapper">
+            <div class="footer-item">
+                <a href="https://www.facebook.com/Klosterbryggeriet-173353999345110/">
+                    <img srcset="images/icons/social-media/facebook-w50.png 50w, images/icons/social-media/facebook-w75.png 75w"
+                        sizes="(max-width: 1366px) 50px, 75px" src="images/icons/social-media/facebook-w50.png"
+                        alt="Gyldent facebook ikon">
+                </a>
+            </div>
+            <div class="footer-item">
+                <a href="https://www.instagram.com/klosterbryggeriet/">
+                    <img srcset="images/icons/social-media/instagram-w50.png 50w, images/icons/social-media/instagram-w75.png 75w"
+                        sizes="(max-width: 1366px) 50px, 75px" src="images/icons/social-media/instagram-w50.png"
+                        alt="Gyldent instagram ikon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

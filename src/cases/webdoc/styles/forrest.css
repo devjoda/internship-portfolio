@@ -1,0 +1,166 @@
+.main {
+  background: url('../images/overview/bg.jpg') center center / cover no-repeat;
+}
+
+.container h2 {
+  padding-left: 0;
+}
+
+.left-page > *,
+.right-page > * {
+  padding: 1rem;
+}
+
+#container-1 img {
+  width: 50%;
+  max-width: 500px;
+  float: right;
+  shape-outside: url('../images/forrest/moss-polaroid.png');
+  shape-image-threshold: 0.2;
+  shape-margin: 12px;
+}
+
+#container-1 h2 {
+  margin-top: 2rem;
+}
+
+#container-1 img {
+  align-self: start;
+  clear: both;
+  width: 50%;
+}
+
+#container-2 img:first-child {
+  cursor: pointer;
+  animation: hue 10s infinite;
+  -webkit-animation: hue 10s infinite;
+  width: 80%;
+  max-width: 350px;
+}
+
+@keyframes hue {
+  0%,
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(180deg);
+  }
+}
+
+@-webkit-keyframes hue {
+  0%,
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(180deg);
+  }
+}
+
+#container-2 {
+  display: flex;
+}
+
+#container-1 div > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#container-1 div > div h2 {
+  width: 350px;
+}
+
+svg {
+  padding: 0;
+}
+
+#container-2 > img:nth-of-type(1) {
+  width: 55%;
+  padding-top: 5rem;
+  padding-right: 3rem;
+}
+
+#container-2 > img:nth-of-type(2) {
+  padding-top: 2rem;
+  width: 40%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  transform: rotate(2deg);
+}
+
+.video-container video {
+  margin: 3rem 0 3rem;
+  width: 60vh;
+  max-width: 100%;
+  border: 1rem solid white;
+  filter: drop-shadow(0.2px 4px 4px black);
+}
+
+#container-4 div:first-of-type {
+  padding-right: 2rem;
+}
+
+#container-4 img {
+  width: 10vw;
+  align-self: end;
+}
+
+.container li {
+  line-height: 3rem;
+}
+
+.container div > ul > li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-weight: bold;
+}
+
+.container div > ul {
+  font-family: var(--handwritten);
+  font-size: 2rem;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+#container-4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#birds-text,
+#rain-text,
+#thunder-text {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #container-2 div p {
+      font-size: 2.5vw;
+  }
+
+  #container-2 > img:nth-of-type(1) {
+    display: none;
+  }
+
+  #container-2 img:first-child {
+      max-width: 425px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  #container-2 div p {
+      font-size: 2.5vw;
+  }
+
+  #container-1 img {
+    max-width: 250px;
+  }
+}
+

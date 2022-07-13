@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book et escape games hos City Escape. Vi tilbyder både unikke udendørs escape games i byrummet, og vi bringer skræddersyede løsninger ud til dig.">
+    <meta name="author" content="Emma Dalsgaard Nielsen, Line Bech Sørensen, Jakob Valentin og Joachim Danielsen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/booking.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png" sizes="512x512">
+    <title>Booking - vælg by</title>
+    <base href="/src/cases/city-escape/">
+</head>
+
+<body>
+    <!-- MAIN HEADER START -->
+    <header id="main-header">
+        <nav id="top-nav">
+            <div id="mobile-top-nav">
+                <div class="mobile-top-wrapper">
+                    <div class="logo-container">
+                        <!--
+                        * vi bruger svg med fallback. der findes forskellige strategier, men vi har brugt object med
+                        * img fallback som beskrevet her: https://css-tricks.com/a-complete-guide-to-svg-fallbacks/
+                        -->
+                        <object class="pictorial-logo" type="image/svg+xml" data="images/header/logo/cityescape-logo-pictorial-mark.svg">
+                            <a href="index.html">
+                                <img class="pictorial-logo" src="images/header/logo/cityescape-logo-pictorial-mark@2x.png" alt="City Escape Logo">
+                            </a>
+                        </object>
+                    </div>
+                    <div class="burger-menu-wrapper">
+                        <object class="burger-icon" type="image/svg+xml" data="images/header/burger-menu/index/burger-menu.svg">
+                            <a href="#mobile-bottom-nav">
+                                <img class="burger-icon" src="images/header/burger-menu/burger-menu@2x.png" alt="Burger menu">
+                            </a>
+                        </object>
+                    </div>
+                </div>
+            </div>
+            <div id="desktop-top-nav">
+                <div class="desktop-top-wrapper">
+                    <div class="logo-container">
+                        <object class="pictorial-logo" type="image/svg+xml" data="images/header/logo/cityescape-logo-pictorial-mark.svg">
+                            <a href="index.html">
+                                <img class="pictorial-logo" src="images/header/logo/cityescape-logo-pictorial-mark@2x.png" alt="City Escape Logo">
+                            </a>
+                        </object>
+                    </div>
+                    <div class="desktop-menu-wrapper">
+                        <ul>
+                            <li>
+                                <div class="escape-games-dropdown-container"><a class="dropdown-anchor escape-games" href="#escape-games-article">Escape games</a><img class="drop-down-icon"
+                                        src="images/header/desktop-anchor-down@2x.png" alt="drop-down ikon"></div>
+                                <ul class="dropdown">
+                                    <li><a href="operation-mindfall.html">Operation Mindfall</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">The Last Secret</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">Hunt a Killer</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">Pirate Escape</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">The Murder at Grand Hotel</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html#concept-article">Koncept</a></li>
+                            <li><a href="index.html#prices-article">Priser</a></li>
+                            <li><a href="index.html#cities-section">Byer</a></li>
+                            <li><a href="booking-hvornaar-skal-det-foregaa.html" class="desktop-book-button">Book nu</a></li>
+                            <li class="lang-list-item">
+                                <div class="lang-dropdown-container"><img id="top-lang-icon" class="lang-icon" src="images/flags/dk@2x.png" alt="Dansk" lang="da"><img class="drop-down-icon"
+                                        src="images/header/desktop-anchor-down@2x.png" alt="drop-down ikon"></div>
+                                <ul class="dropdown lang">
+                                    <li><a class="out-of-scope" href="javascript:void(0);" lang="en"><img class="dropdown-lang-icon" src="images/flags/gb@2x.png" lang="en" alt="English"></a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);" lang="de"><img class="dropdown-lang-icon" src="images/flags/de@2x.png" lang="de" alt="Deutsche"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN HEADER SLUT -->
+
+    <!-- MAIN CONTENT START -->
+    <main id="main-content">
+        <article class="booking">
+            <form action="booking-indtast-kontaktoplysninger.html">
+                <div class="section-wrapper">
+                    <div class="heading-wrapper">
+                        <div class="heading-container">
+                            <h1>Book escape game</h1>
+                            <progress max="100" value="60"></progress>
+                        </div>
+                    </div>
+                    <a href="booking-hvor-skal-det-foregaa.html">
+                        <div class="back-arrow-container">
+                            <img class="back-arrow" src="images/booking/icons/back-arrow.png" alt="Tilbage pil">
+                        </div>
+                    </a>
+                    <h2>Vælg by</h2>
+                    <div id="city-container" class="select-container">
+                        <label id="city-label" class="select-label" for="city-select">Tilgængelige byer <span class="red">*</span></label>
+                        <select id="city-select" name="city-select" size="9" required>
+                            <option>København</option>
+                            <option>Aarhus</option>
+                            <option>Odense</option>
+                            <option>Esbjerg</option>
+                            <option>Kolding</option>
+                            <option>Randers</option>
+                            <option>Herning</option>
+                            <option>Roskilde</option>
+                            <option>Horsens</option>
+                        </select>
+                    </div>
+                    <button class="button gold-button" type="submit">Næste valg</button>
+                </div>
+            </form>
+        </article>
+    </main>
+    <!-- MAIN CONTENT SLUT -->
+
+    <!-- MAIN FOOTER START -->
+    <footer id="main-footer">
+        <div class="footer-wrapper">
+            <div id="mobile-footer">
+                <nav id="mobile-bottom-nav">
+                    <ul class="outer-nav-ul">
+                        <li>
+                            <div class="parent-anchor-container">
+                                <a class="parent-anchor" href="index.html#escape-games-article">Escape games</a>
+                            </div>
+                            <ul class="inner-nav-ul">
+                                <li class="child-anchor"><a href="operation-mindfall.html">Operation Mindfall</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">The Last Secret</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">Hunt a Killer</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">Pirate Escape</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">The Murder at Grand Hotel</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#concept-article">Koncept</a></li>
+                        <li><a href="index.html#prices-article">Priser</a></li>
+                        <li><a href="index.html#cities-section">Byer</a></li>
+                        <li><a href="booking-hvornaar-skal-det-foregaa.html">Booking</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-additional-info-wrapper">
+                    <div class="mobile-contact-info">
+                        <h4>Kontakt</h4>
+                        <ul class="mobile-contact-info-list">
+                            <li>
+                                <address><a href="mailto:info@cityescape.dk">info@cityescape.dk</a></address>
+                            </li>
+                            <li>
+                                <address><a href="tel:+4571961687">+45 71 96 16 87</a></address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-opening-hours align-right">
+                        <h4>Åbningstider</h4>
+                        <p>Alle hverdage</p>
+                        <p>10.00 - 21.00</p>
+                    </div>
+                </div>
+                <hr>
+                <ul class="mobile-lang-switcher">
+                    <li class="lang lang-da">
+                        <a class="out-of-scope" href="javascript:void(0);" lang="da">
+                            <img class="lang-icon" src="images/flags/dk@2x.png" lang="da" alt="Dansk">
+                        </a>
+                    </li>
+                    <li class="lang lang-en">
+                        <a class="out-of-scope" href="javascript:void(0);" lang="en">
+                            <img class="lang-icon" src="images/flags/gb@2x.png" lang="en" alt="English">
+                        </a>
+                    </li>
+                    <li class="lang lang-de">
+                        <a class="out-of-scope" href="javascript:void(0);" lang="de">
+                            <img class="lang-icon" src="images/flags/de@2x.png" lang="de" alt="Deutsche">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- MAIN FOOTER SLUT -->
+
+    <!-- MODALS START -->
+    <!-- ESCAPE GAME DEFINITION MOBILE MODAL START -->
+
+    <aside class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-top">
+                <h4 class="modal-heading">Test</h4>
+                <img class="modal-close" src="images/index/icons/close-modal-black@2x.png" alt="Luk vinduet">
+            </div>
+            <div class="modal-bottom">
+                <h5 class="modal-subheading">subheading</h5>
+                <hr>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ESCAPE GAME DEFINITION MOBILE MODAL SLUT -->
+    <!-- MODALS SLUT -->
+
+    <script src="scripts/booking.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

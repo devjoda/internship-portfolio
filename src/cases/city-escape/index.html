@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="City Escape er danmarks førende udbyder af udendørs escape rooms i byens centrum. Prøv danmarks bedste city escape game.">
+    <meta name="author" content="Emma Dalsgaard Nielsen, Line Bech Sørensen, Jakob Valentin og Joachim Danielsen">
+    <!-- 
+    * normalize.css anvendes for at imødekomme indbyggede browser variationer. 
+    * fordelen ved normalize.css fremfor f.eks. eric meyers reset, er at den er 
+    * mere skånsom, og f.eks. ikke trimmer alle headings til samme størrelse.-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- web- (google) og selfhostede fonts anvendes med hhv preconnect og preload for at forsøge at forbedre
+    brugeroplevelsen ved hurtigt at loade fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/321perfect/321perfect-webfont.woff2" as="font" crossorigin>
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png" sizes="512x512">
+    <title>City Escape - escape games i byen</title>
+    <base href="/src/cases/city-escape/">
+</head>
+
+<body>
+    <!-- MAIN HEADER START -->
+    <header id="main-header">
+        <nav id="top-nav">
+            <div id="mobile-top-nav">
+                <div class="mobile-top-wrapper">
+                    <div class="logo-container">
+                        <!--
+                        * vi bruger svg med fallback. der findes forskellige strategier, men vi har brugt object med
+                        * img fallback som beskrevet her: https://css-tricks.com/a-complete-guide-to-svg-fallbacks/
+                        -->
+                        <object class="pictorial-logo" type="image/svg+xml" data="images/header/logo/cityescape-logo-pictorial-mark.svg">
+                            <a href="index.html">
+                                <img class="pictorial-logo" src="images/header/logo/cityescape-logo-pictorial-mark@2x.png" alt="City Escape Logo">
+                            </a>
+                        </object>
+                    </div>
+                    <div class="burger-menu-wrapper">
+                        <object class="burger-icon" type="image/svg+xml" data="images/header/burger-menu/index/burger-menu.svg">
+                            <a href="#mobile-bottom-nav">
+                                <img class="burger-icon" src="images/header/burger-menu/burger-menu@2x.png" alt="Burger menu">
+                            </a>
+                        </object>
+                    </div>
+                </div>
+            </div>
+            <div id="desktop-top-nav">
+                <div class="desktop-top-wrapper">
+                    <div class="logo-container">
+                        <object class="pictorial-logo" type="image/svg+xml" data="images/header/logo/cityescape-logo-pictorial-mark.svg">
+                            <a href="index.html">
+                                <img class="pictorial-logo" src="images/header/logo/cityescape-logo-pictorial-mark@2x.png" alt="City Escape Logo">
+                            </a>
+                        </object>
+                    </div>
+                    <div class="desktop-menu-wrapper">
+                        <ul>
+                            <li>
+                                <div class="escape-games-dropdown-container"><a class="dropdown-anchor escape-games" href="#escape-games-article">Escape games</a><img class="drop-down-icon"
+                                        src="images/header/desktop-anchor-down@2x.png" alt="drop-down ikon"></div>
+                                <ul class="dropdown">
+                                    <li><a href="operation-mindfall.html">Operation Mindfall</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">The Last Secret</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">Hunt a Killer</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">Pirate Escape</a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);">The Murder at Grand Hotel</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html#concept-article">Koncept</a></li>
+                            <li><a href="index.html#prices-article">Priser</a></li>
+                            <li><a href="index.html#cities-section">Byer</a></li>
+                            <li><a href="booking-hvornaar-skal-det-foregaa.html" class="desktop-book-button">Book nu</a></li>
+                            <li class="lang-list-item">
+                                <div class="lang-dropdown-container"><img id="top-lang-icon" class="lang-icon" src="images/flags/dk@2x.png" alt="Dansk" lang="da"><img class="drop-down-icon"
+                                        src="images/header/desktop-anchor-down@2x.png" alt="drop-down ikon"></div>
+                                <ul class="dropdown lang">
+                                    <li><a class="out-of-scope" href="javascript:void(0);" lang="en"><img class="dropdown-lang-icon" src="images/flags/gb@2x.png" lang="en" alt="English"></a></li>
+                                    <li><a class="out-of-scope" href="javascript:void(0);" lang="de"><img class="dropdown-lang-icon" src="images/flags/de@2x.png" lang="de" alt="Deutsche"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN HEADER SLUT -->
+
+    <!-- MAIN CONTENT START -->
+    <main id="main-content">
+        <!-- HERO START -->
+        <header class="hero-wrapper">
+            <div class="top-hero">
+                <h1 class="video-overlay-text">City Escape</h1>
+            </div>
+            <div class="middle-hero">
+                <div class="middle-hero-inner-container">
+                    <video class="video" autoplay loop muted playsinline>
+                        <source src="videos/index/atmosphere-video-optimized.mp4" type="video/mp4">
+                    </video>
+                    <div class="cta-wrapper">
+                        <a class="video-overlay-button white-button" href="gavekort-hvordan-skal-gavekortet-leveres.html">Køb gavekort</a>
+                        <a class="video-overlay-button gold-button" href="booking-hvornaar-skal-det-foregaa.html">Book nu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-hero">
+                <div class="review-slider">
+                    <div class="review-slider-left">
+                        <img loading="eager" class="review-slider-icon-left" src="images/index/reviews/review-slider/review-slider-left@2x.png" alt="Pil til venstre">
+                    </div>
+                    <div class="review-slider-content">
+                        <div class="review-slider-content-top">
+                            <p><span id="review-name" class="golden">Emil H.</span> anbefaler City Escape</p>
+                        </div>
+                        <div class="review-slider-content-bottom">
+                            <img loading="eager" id="review-profile-picture" src="images/index/reviews/profile-pictures/esben@2x.png" alt="Esben">
+                            <p id="review-text">Det var virkelig sjovt! Det er en fed måde at se sin by på.</p>
+                        </div>
+                    </div>
+                    <div class="review-slider-right">
+                        <img loading="eager" class="review-slider-icon-right" src="images/index/reviews/review-slider/review-slider-right@2x.png" alt="Pil til højre">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HERO SLUT -->
+
+        <!-- HVORFOR VÆLGE OS SEKTION START -->
+        <article id="why-choose-us-article">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Hvorfor vælge os?</h2>
+                        <hr>
+                    </div>
+                </div>
+                <section class="entertaintment-section">
+                    <div class="heading-and-icon-wrapper">
+                        <div class="heading-container">
+                            <h3>Underholdende escape games</h3>
+                        </div>
+                        <div class="icon-container">
+                            <object class="why-choose-us-icon icon" type="image/svg+xml" data="images/index/icons/entertainment-icon.svg">
+                                <img class="why-choose-us-icon icon" src="images/index/icons/entertainment-icon@2x.png" alt="Grinende og grædende maske">
+                            </object>
+                        </div>
+                    </div>
+                    <p>
+                        Vi tilbyder underholdende og udfordrende <span class="escape-games-definition">escape games</span>. Vores spiloplevelser er
+                        designet af passionerede
+                        entusiaster, og
+                        byder på originale gåder, fængslende fortællinger og et
+                        medrivende univers.
+                    </p>
+                    <!--
+                    * resolution switching anvendes for at få responsive billeder,
+                    * se https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+                    -->
+                    <img class="why-choose-us-photo photo" srcset="images/index/photos/line-uv-light@1.jpg 335w, images/index/photos/line-uv-light@1.5.jpg 503w" sizes="(max-width: 600px) 335px, 503px"
+                        src="images/index/photos/line-uv-light@1.5.jpg" alt="Kvinde som lyser med UV lys bag en container">
+                </section>
+                <section class="props-section">
+                    <div class="heading-and-icon-wrapper">
+                        <div class="heading-container">
+                            <h3>Gennemførte rekvisitter</h3>
+                        </div>
+                        <div class="icon-container">
+                            <object class="why-choose-us-icon icon" type="image/svg+xml" data="images/index/icons/briefcase-icon.svg">
+                                <img class="why-choose-us-icon icon" src="images/index/icons/briefcase-icon@2x.png" alt="Kuffert">
+                            </object>
+                        </div>
+                    </div>
+                    <p>
+                        Rekvisitter er en vigtig del af oplevelsen. I får udleveret en iPad og en kuffert propfyldt med imponerende gadgets. De er ikke bare til pynt, men skal bruges til at navigere
+                        rundt, løse gåder og finde skjulte spor.
+                    </p>
+                    <img class="why-choose-us-photo photo" srcset="images/index/photos/mindfall-briefcase@1.jpg 335w, images/index/photos/mindfall-briefcase@1.5.jpg 503w"
+                        sizes="(max-width: 600px) 335px, 503px" src="images/index/photos/mindfall-briefcase@1.5.jpg" alt="Mindfall kuffert som ligger på jorden">
+                </section>
+                <section class="teamwork-section">
+                    <div class="heading-and-icon-wrapper">
+                        <div class="heading-container">
+                            <h3>Skræddersyet til samarbejde</h3>
+                        </div>
+                        <div class="icon-container">
+                            <object class="why-choose-us-icon icon" type="image/svg+xml" data="images/index/icons/teamwork-icon.svg">
+                                <img class="why-choose-us-icon icon" src="images/index/icons/teamwork-icon@2x.png" alt="Hænder som trykker hinanden">
+                            </object>
+                        </div>
+                    </div>
+                    <p>
+                        Spillene er bygget op omkring samarbejde og teambuilding. Det er derfor en absolut fordel, at I kan slå hovederne sammen, når der skal laves hjernegymnastik og løses opgaver.
+                    </p>
+                    <img class="why-choose-us-photo photo" srcset="images/index/photos/teamwork@1.jpg 335w, images/index/photos/teamwork@1.5.jpg 503w" sizes="(max-width: 600px) 335px, 503px"
+                        src="images/index/photos/teamwork@1.5.jpg" alt="Mindfall kuffert som ligger på jorden">
+                </section>
+            </div>
+        </article>
+        <!-- HVORFOR VÆLGE OS SEKTION SLUT -->
+
+        <div class="aarhus-silouhette"></div>
+
+        <!-- ESCAPE GAMES SEKTION START -->
+        <article id="escape-games-article">
+            <!-- ESCAPE GAMES INTRO START -->
+            <header>
+                <div class="section-wrapper">
+                    <h2>Hvilken spiltype skal du vælge?</h2>
+                    <hr>
+                    <p>
+                        Vi har et bredt udvalg af forskellige escape games med tre forskellige spiltyper. Uanset hvad valget falder på, garanterer vi, at det vil blive en sjov og uforglemmelig
+                        oplevelse.
+                    </p>
+                </div>
+            </header>
+            <!-- ESCAPE GAMES INTRO SLUT -->
+
+            <!-- UDENDØRS ESCAPE GAMES START -->
+            <section class="outdoor-escape-game-section">
+                <div class="section-wrapper">
+                    <div class="heading-and-icon-wrapper">
+                        <div class="heading-container">
+                            <h3>Udendørs escape game</h3>
+                        </div>
+                        <div class="icon-container">
+                            <object class="outdoor-escape-game-icon icon" type="image/svg+xml" data="images/index/icons/1-icon.svg">
+                                <img class="outdoor-escape-game-icon icon" src="images/index/icons/1-icon@2x.png" alt="Et-tal">
+                            </object>
+                        </div>
+                    </div>
+                    <p class="summary">Foregår i hjertet af byen. I har to timer til at løse missionen og undslippe byen.</p>
+                    <div class="icon-wrapper">
+                        <object class="outdoor-escape-game-icon icon" type="image/svg+xml" data="images/index/icons/outdoors-icon.svg">
+                            <img class="outdoor-escape-game-icon icon" src="images/index/icons/outdoors-icon@2x.png" alt="Park ved siden af by med teksten 'Foregår udendørs'">
+                        </object>
+                        <object class="outdoor-escape-game-icon icon" type="image/svg+xml" data="images/index/icons/escape-the-city-icon.svg">
+                            <img class="outdoor-escape-game-icon icon" src="images/index/icons/escape-the-city-icon@2x.png" alt="Nedtællingsur med teksten 'Undslip byen'">
+                        </object>
+                        <object class="outdoor-escape-game-icon icon" type="image/svg+xml" data="images/index/icons/augmented-reality.svg">
+                            <img class="outdoor-escape-game-icon icon" src="images/index/icons/augmented-reality@2x.png" alt="AR-telefon med teksten 'Augmented reality'">
+                        </object>
+                    </div>
+                    <div class="card-wrapper">
+                        <object class="operation-mindfall-card card" type="image/svg+xml" data="images/index/cards/mobile/operation-mindfall/operation-mindfall-card.svg">
+                            <img class="operation-mindfall-card card" src="images/index/cards/mobile/operation-mindfall/operation-mindfall-card@2x.png" alt="Card for Operation Mindfall">
+                        </object>
+                        <object class="the-last-secret-card card" type="image/svg+xml" data="images/index/cards/mobile/the-last-secret/the-last-secret-card.svg">
+                            <img class="the-last-secret-card card" src="images/index/cards/mobile/the-last-secret/the-last-secret-card@2x.png" alt="Card for The Last Secret">
+                        </object>
+                        <object class="hunt-a-killer-card card" type="image/svg+xml" data="images/index/cards/mobile/hunt-a-killer/hunt-a-killer-card.svg">
+                            <img class="hunt-a-killer-card card" src="images/index/cards/mobile/hunt-a-killer/hunt-a-killer-card@2x.png" alt="Card for Hunt a Killer">
+                        </object>
+                    </div>
+                </div>
+            </section>
+            <!-- UDENDØRS ESCAPE GAMES SLUT -->
+
+            <!-- MOBILE ESCAPE GAMES START -->
+            <section class="mobile-escape-room-section">
+                <div class="section-wrapper">
+                    <div class="heading-and-icon-wrapper">
+                        <div class="heading-container">
+                            <h3>Mobilt escape room</h3>
+                        </div>
+                        <div class="icon-container">
+                            <object class="mobile-escape-room-icon icon" type="image/svg+xml" data="images/index/icons/2-icon.svg">
+                                <img class="mobile-escape-room-icon icon" src="images/index/icons/2-icon@2x.png" alt="To-tal">
+                            </object>
+                        </div>
+                    </div>
+                    <p class="summary">Vi kommer ud til jer, og sætter alt op. I har to timer til at undslippe det aflåste rum.</p>
+                    <div class="icon-wrapper">
+                        <object class="mobile-escape-room-icon icon" type="image/svg+xml" data="images/index/icons/you-call-we-deliver-gold-icon.svg">
+                            <img class="mobile-escape-room-icon icon" src="images/index/icons/you-call-we-deliver-gold-icon@2x.png" alt="Lastbil med teksten 'I ringer, vi bringer'">
+                        </object>
+                        <object class="mobile-escape-room-icon icon" type="image/svg+xml" data="images/index/icons/escape-the-room-icon.svg">
+                            <img class="mobile-escape-room-icon icon" src="images/index/icons/escape-the-room-icon@2x.png" alt="Åben dør med teksten 'Undslip rummet'">
+                        </object>
+                        <object class="mobile-escape-room-icon icon" type="image/svg+xml" data="images/index/icons/treasure-hunt-icon.svg">
+                            <img class="mobile-escape-room-icon icon" src="images/index/icons/treasure-hunt-icon@2x.png" alt="Skattekiste med teksten 'Tag på skattejagt'">
+                        </object>
+                    </div>
+                    <div class="card-wrapper">
+                        <object class="pirate-escape-card card" type="image/svg+xml" data="images/index/cards/mobile/pirate-escape/pirate-escape-card.svg">
+                            <img class="pirate-escape-card card" src="images/index/cards/mobile/pirate-escape/pirate-escape-card@2x.png" alt="Card for Pirate Escape">
+                        </object>
+                    </div>
+                </div>
+            </section>
+            <!-- MOBILE ESCAPE GAMES SLUT -->
+
+            <!-- MURDER MYSTERY SEKTION START -->
+            <section class="murder-mystery-section">
+                <div class="section-wrapper">
+                    <div class="heading-and-icon-wrapper">
+                        <div class="heading-container">
+                            <h3>Murder Mystery</h3>
+                        </div>
+                        <div class="icon-container">
+                            <object class="murder-mystery-icon icon" type="image/svg+xml" data="images/index/icons/3-icon.svg">
+                                <img class="murder-mystery-icon icon" src="images/index/icons/3-icon@2x.png" alt="Tre-tal">
+                            </object>
+                        </div>
+                    </div>
+                    <p class="summary">Vi kommer ud til jer, og sætter alt op. I har to timer til at finde den hemmelige morder iblandt jer.</p>
+                    <div class="icon-wrapper">
+                        <object class="murder-mystery-icon icon" type="image/svg+xml" data="images/index/icons/you-call-we-deliver-black-icon.svg">
+                            <img class="murder-mystery-icon icon" src="images/index/icons/you-call-we-deliver-black-icon@2x.png" alt="Lastbil med teksten 'I ringer, vi bringer'">
+                        </object>
+                        <object class="murder-mystery-icon icon" type="image/svg+xml" data="images/index/icons/find-the-killer-icon.svg">
+                            <img class="murder-mystery-icon icon" src="images/index/icons/find-the-killer-icon@2x.png" alt="Forstørrelsesglas med teksten 'Find morderen'">
+                        </object>
+                        <object class="murder-mystery-icon icon" type="image/svg+xml" data="images/index/icons/roleplay-and-whodunnit-icon.svg">
+                            <img class="murder-mystery-icon icon" src="images/index/icons/roleplay-and-whodunnit-icon@2x.png" alt="Mand med undervandshjelm med teksten 'Rollespil & whodunnit'">
+                        </object>
+                    </div>
+                    <div class="card-wrapper">
+                        <object class="the-murderer-at-grand-hotel-card card" type="image/svg+xml" data="images/index/cards/mobile/the-murderer-at-grand-hotel/the-murderer-at-grand-hotel-card.svg">
+                            <img class="the-murderer-at-grand-hotel-card card" src="images/index/cards/mobile/the-murderer-at-grand-hotel/the-murderer-at-grand-hotel-card@2x.png"
+                                alt="Card for The Murderer at Grand Hotel">
+                        </object>
+                    </div>
+                </div>
+            </section>
+            <!-- MURDER MYSTERY SEKTION SLUT -->
+        </article>
+        <!-- ESCAPE GAMES SEKTION SLUT -->
+
+        <div class="copenhagen-silouhette"></div>
+
+        <!-- KONCEPT SEKTION START -->
+        <article id="concept-article">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Hvordan fungerer udendørs escape game?</h2>
+                        <hr>
+                    </div>
+                </div>
+                <section class="concept-step-1">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">01</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/team-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/team-icon@2x.png" alt="Et hold på 4 personer">
+                    </object>
+                    <h4>Lav et team</h4>
+                    <p>Tag dine allerbedste meddedektiver under armen, og opfind et team navn, der passer lige til jer.</p>
+                    <!--
+                        * først anvendte vi en <div> til at lave hvide prikkede linjer, (i stedet for <hr> da det er et
+                        * semantisk element, som denoterer en tematisk pause mellem paragrafelementer). problemet med den
+                        * løsning var, at det var svært at få linjen til at optage plads og ikke overflow'e ind i andet
+                        * indhold (div fik en tranform: rotate() property til at rendere den skrå pil). vi forsøgte med wrapper
+                        * med fixed height, men største problem med den løsning var manglende responsivitet. transform:
+                        * translateY() blev også brugt men virkede som en suboptimal løsning at rykke alt indhold. til sidst
+                        * gik vi med en svg, som fik property'en 'vector-effect="non-scaling-stroke', så prikkerne ikke
+                        * scaler ved større width.
+                        -->
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-right" viewBox="0 0 100 40" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.79298" y1="3.11418" x2="336.793" y2="125.114" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-2">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">02</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/detective-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/detective-icon@2x.png" alt="Detektiv">
+                    </object>
+                    <h4 class="align-right">Vælg en mission</h4>
+                    <p class="align-right">Så skal missionen vælges. Skal I ud på eventyr i jagten på Albert Einsteins sidste hemmelighed eller skal I redde byen fra en dødbringende virus? Det er helt
+                        op til jer.</p>
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-left" viewBox="100 52 100 38" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="336.793" y1="2.81245" x2="1.79299" y2="124.812" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-3">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">03</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/introduction-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/introduction-icon@2x.png" alt="Et hold på 4 personer">
+                    </object>
+                    <h4>Få intro og udstyr</h4>
+                    <p>Missionen indledes med en kort intro fra jeres gamemaster. I vil herefter blive udstyret med en iPad og en kuffert fyldt med gadgets og ledetråde.</p>
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-right" viewBox="0 0 100 40" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.79298" y1="3.11418" x2="336.793" y2="125.114" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-4">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">04</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/go-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/go-icon@2x.png" alt="Fødder på farten">
+                    </object>
+                    <h4 class="align-right">Sæt i gang</h4>
+                    <p class="align-right">Gamemasteren slipper jer fri til at løse missionen på egen hånd, og nedtællingsuret sættes i gang. I har to timer til at nå i mål, og det er med at sætte det
+                        lange ben foran. </p>
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-left" viewBox="100 52 100 38" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="336.793" y1="2.81245" x2="1.79299" y2="124.812" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-5">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">05</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/map-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/map-icon@2x.png" alt="Fold-ud-kort med nål i">
+                    </object>
+                    <h4>Følg kortet rundt i byen</h4>
+                    <p>På iPad’en vil der være et GPS-kort over byen, hvor de forskellige delmissioner er markeret. Find frem til dem så hurtigt I kan.</p>
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-right" viewBox="0 0 100 40" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.79298" y1="3.11418" x2="336.793" y2="125.114" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-6">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">06</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/lock-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/lock-icon@2x.png" alt="Hængelås">
+                    </object>
+                    <h4 class="align-right">Udforsk byen og løs opgaverne</h4>
+                    <p class="align-right">Udforsk byen hvor opgaver og mysterier venter jer. I får brug for både gadgets, ledetråde samt en god portion kløgt for at løse opgaverne.</p>
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-left" viewBox="100 52 100 38" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="336.793" y1="2.81245" x2="1.79299" y2="124.812" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-7">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">07</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/checkmark.svg">
+                        <img class="concept-icon icon" src="images/index/icons/checkmark@2x.png" alt="Flueben">
+                    </object>
+                    <h4>Fuldfør missionen</h4>
+                    <p>Brug alt den viden i har indsamlet undervejs til at løse den sidste mission. Har I mon hvad der skal til?</p>
+                    <div class="dashed-line-wrapper">
+                        <svg class="dashed-line-right" viewBox="0 0 100 40" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.79298" y1="3.11418" x2="336.793" y2="125.114" stroke="white" stroke-width="5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+                </section>
+                <section class="concept-step-8">
+                    <div class="step-heading">
+                        <h3>Step <br />
+                            <span class="second-line">08</span>
+                        </h3>
+                    </div>
+                    <object class="concept-icon icon" type="image/svg+xml" data="images/index/icons/celebrate-icon.svg">
+                        <img class="concept-icon icon" src="images/index/icons/celebrate-icon@2x.png" alt="Konfetti">
+                    </object>
+                    <h4 class="align-right">Fejr at I kom igennem</h4>
+                    <p class="align-right">Fejr at i kom over målstregen! Fik I løst missionen inden tiden løb ud? På iPaden vil I kunne se jeres plads på high score-listen. </p>
+                </section>
+            </div>
+        </article>
+        <!-- KONCEPT SEKTION SLUT -->
+
+        <!-- PRISER SEKTION START -->
+        <article id="prices-article">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Hvad koster udendørs escape game?</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="prices-wrapper">
+                    <div class="prices-top-row">
+                        <p>Antal personer*</p>
+                        <p class="align-right">Pris pr. person</p>
+                    </div>
+                    <div class="prices-row">
+                        <div class="prices-row-left">
+                            <p>2</p>
+                            <div class="prices-icon-wrapper">
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                            </div>
+                        </div>
+                        <div class="prices-row-right">
+                            <p class="golden">245</p>
+                            <p>DKK</p>
+                        </div>
+                    </div>
+                    <div class="prices-middle-divider"></div>
+                    <div class="prices-row">
+                        <div class="prices-row-left">
+                            <p>3</p>
+                            <div class="prices-icon-wrapper">
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                            </div>
+                        </div>
+                        <div class="prices-row-right">
+                            <p class="golden">225</p>
+                            <p>DKK</p>
+                        </div>
+                    </div>
+                    <div class="prices-middle-divider"></div>
+                    <div class="prices-row">
+                        <div class="prices-row-left">
+                            <p>4</p>
+                            <div class="prices-icon-wrapper">
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                            </div>
+                        </div>
+                        <div class="prices-row-right">
+                            <p class="golden">195</p>
+                            <p>DKK</p>
+                        </div>
+                    </div>
+                    <div class="prices-middle-divider"></div>
+                    <div class="prices-row">
+                        <div class="prices-row-left">
+                            <p>5</p>
+                            <div class="prices-icon-wrapper">
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                                <object class="prices-icon icon" type="image/svg+xml" data="images/index/icons/prices-icon-man.svg">
+                                    <img class="prices-icon icon" src="images/index/icons/prices-icon-man@2x.png" alt="Person">
+                                </object>
+                            </div>
+                            <p class="golden" id="prices-plus">+</p>
+                        </div>
+                        <div class="prices-row-right">
+                            <p class="golden">175</p>
+                            <p>DKK</p>
+                        </div>
+                    </div>
+                    <div class="prices-middle-divider"></div>
+                    <div class="prices-bottom-row">
+                        <small>Vi anbefaler max 6 personer pr. hold</small>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- PRISER SEKTION SLUT -->
+
+        <!-- ANLEDNINGER SEKTION START -->
+        <!--
+        * strukturen bliver brudt lidt her, hvor <article> skiftes ud med <section> ud fra en vurdering af, at indholdet begynder at bevæge sig væk fra
+        * <article>-taggets anvendelsesområde som noget der er selvindholdende, og som er beregnet til syndikation og vil give mening i sig selv syndikeret.
+        * <section> bruges, da der ikke umiddelbart syntes at være mere passende semantiske tags.
+        -->
+        <section id="occasion-section">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Til enhver anledning</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="occasion-icon-wrapper">
+                    <div class="occasion-bachelor-party">
+                        <object class="occasion-icon icon" type="image/svg+xml" data="images/index/icons/bachelor-party-icon.svg">
+                            <img class="occasion-icon icon" src="images/index/icons/bachelor-party-icon@2x.png" alt="To personer der giver high-five">
+                        </object>
+                        <p>Polterabend</p>
+                    </div>
+                    <div class="occasion-birthday-party">
+                        <object class="occasion-icon icon" type="image/svg+xml" data="images/index/icons/birthday-icon.svg">
+                            <img class="occasion-icon icon" src="images/index/icons/birthday-icon@2x.png" alt="To personer der giver high-five">
+                        </object>
+                        <p>Fødselsdag</p>
+                    </div>
+                    <div class="occasion-corporate-event">
+                        <object class="occasion-icon icon" type="image/svg+xml" data="images/index/icons/corporate-event-icon.svg">
+                            <img class="occasion-icon icon" src="images/index/icons/celebrate-icon@2x.png" alt="To personer der giver high-five">
+                        </object>
+                        <p>Firmafest</p>
+                    </div>
+                    <div class="occasion-friends-and-family">
+                        <object class="occasion-icon icon" type="image/svg+xml" data="images/index/icons/friends-and-family-icon.svg">
+                            <img class="occasion-icon icon" src="images/index/icons/friends-and-family-icon@2x.png" alt="To personer der giver high-five">
+                        </object>
+                        <p>Venner/familie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ANLEDNINGER SEKTION SLUT -->
+
+        <div class="aarhus-silouhette funkylines"></div>
+
+        <!-- ANMELDELSER SEKTION START -->
+        <section id="reviews-section">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Hvad siger dem som har prøvet det?</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="reviews-wrapper">
+                    <object class="review" type="image/svg+xml" data="images/index/reviews/review-1.svg">
+                        <img class="review" src="images/index/reviews/review-1@2x.png" alt="Positiv facebook anmeldelse">
+                    </object>
+                    <object class="review" type="image/svg+xml" data="images/index/reviews/review-2.svg">
+                        <img class="review" src="images/index/reviews/review-2@2x.png" alt="Positiv facebook anmeldelse">
+                    </object>
+                    <object class="review" type="image/svg+xml" data="images/index/reviews/review-3.svg">
+                        <img class="review" src="images/index/reviews/review-3@2x.png" alt="Positiv facebook anmeldelse">
+                    </object>
+                    <object class="review" type="image/svg+xml" data="images/index/reviews/review-4.svg">
+                        <img class="review" src="images/index/reviews/review-4@2x.png" alt="Positiv facebook anmeldelse">
+                    </object>
+                    <object class="review" type="image/svg+xml" data="images/index/reviews/review-5.svg">
+                        <img class="review" src="images/index/reviews/review-5@2x.png" alt="Positiv facebook anmeldelse">
+                    </object>
+                    <p>Læs mange flere gode</p>
+                    <p>anmeldelser på</p>
+                    <p><a href="https://www.facebook.com/cityescape.dk/reviews/" target="_blank">vores facebook</a></p>
+                    <object class="reviews-facebook-logo" type="image/svg+xml" data="images/index/icons/reviews-facebook-logo.svg">
+                        <img class="reviews-facebook-logo" src="images/index/icons/reviews-facebook-logo@2x.png" alt="Facebook logo">
+                    </object>
+                </div>
+            </div>
+        </section>
+        <!-- ANMELDELSER SEKTION SLUT -->
+
+        <!-- BYER SEKTION START -->
+        <section id="cities-section">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Hvor finder du os?</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="cities-wrapper">
+                    <div id="københavn" class="city-container">
+                        <p class="city">København</p>
+                    </div>
+                    <div id="aarhus" class="city-container">
+                        <p class="city">Aarhus</p>
+                    </div>
+                    <div id="odense" class="city-container">
+                        <p class="city">Odense</p>
+                    </div>
+                    <div id="esbjerg" class="city-container">
+                        <p class="city">Esbjerg</p>
+                    </div>
+                    <div id="kolding" class="city-container">
+                        <p class="city">Kolding</p>
+                    </div>
+                    <div id="randers" class="city-container">
+                        <p class="city">Randers</p>
+                    </div>
+                    <div id="herning" class="city-container">
+                        <p class="city">Herning</p>
+                    </div>
+                    <div id="roskilde" class="city-container">
+                        <p class="city">Roskilde</p>
+                    </div>
+                    <div id="horsens" class="city-container">
+                        <p class="city">Horsens</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BYER SEKTION SLUT -->
+
+        <!-- CTA SEKTION START -->
+        <section id="cta-section">
+            <div class="section-wrapper">
+                <div class="heading-wrapper">
+                    <div class="heading-container">
+                        <h2>Klar til at undslippe byen?</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="cta-wrapper">
+                    <a class="cta-button white-button" href="gavekort-hvordan-skal-gavekortet-leveres.html">Køb gavekort</a>
+                    <a class="cta-button gold-button" href="booking-hvornaar-skal-det-foregaa.html">Book nu</a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA SEKTION SLUT -->
+    </main>
+    <!-- MAIN CONTENT SLUT -->
+
+    <!-- MAIN FOOTER START -->
+    <footer id="main-footer">
+        <div class="footer-wrapper">
+            <div id="mobile-footer">
+                <nav id="mobile-bottom-nav">
+                    <ul class="outer-nav-ul">
+                        <li>
+                            <div class="parent-anchor-container">
+                                <a class="parent-anchor" href="index.html#escape-games-article">Escape games</a>
+                            </div>
+                            <ul class="inner-nav-ul">
+                                <li class="child-anchor"><a href="operation-mindfall.html">Operation Mindfall</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">The Last Secret</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">Hunt a Killer</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">Pirate Escape</a></li>
+                                <li class="child-anchor"><a class="out-of-scope" href="javascript:void(0);">The Murder at Grand Hotel</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#concept-article">Koncept</a></li>
+                        <li><a href="index.html#prices-article">Priser</a></li>
+                        <li><a href="index.html#cities-section">Byer</a></li>
+                        <li><a href="booking-hvornaar-skal-det-foregaa.html">Booking</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-additional-info-wrapper">
+                    <!-- semantisk tag 'address' bruges for kontaktinfo, se: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address -->
+                    <div class="mobile-contact-info">
+                        <h4>Kontakt</h4>
+                        <ul class="mobile-contact-info-list">
+                            <li>
+                                <address><a href="mailto:info@cityescape.dk">info@cityescape.dk</a></address>
+                            </li>
+                            <li>
+                                <address><a href="tel:+4571961687">+45 71 96 16 87</a></address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-opening-hours align-right">
+                        <h4>Åbningstider</h4>
+                        <p>Alle hverdage</p>
+                        <p>10.00 - 21.00</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- lang bruges som attribut for at angive sprog (alt attribaut), se: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang -->
+                <!-- flag ikoner kommer fra https://github.com/lipis/flag-icon-css  -->
+                <ul class="mobile-lang-switcher">
+                    <li class="lang lang-da">
+                        <a class="out-of-scope" href="javascript:void(0);" lang="da">
+                            <img class="lang-icon" src="images/flags/dk@2x.png" lang="da" alt="Dansk">
+                        </a>
+                    </li>
+                    <li class="lang lang-en">
+                        <a class="out-of-scope" href="javascript:void(0);" lang="en">
+                            <img class="lang-icon" src="images/flags/gb@2x.png" lang="en" alt="English">
+                        </a>
+                    </li>
+                    <li class="lang lang-de">
+                        <a class="out-of-scope" href="javascript:void(0);" lang="de">
+                            <img class="lang-icon" src="images/flags/de@2x.png" lang="de" alt="Deutsche">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- MAIN FOOTER SLUT -->
+
+    <!-- MODALS START -->
+    <!-- ESCAPE GAME DEFINITION MOBILE MODAL START -->
+
+    <aside class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-top">
+                <h4 class="modal-heading">Test</h4>
+                <img class="modal-close" src="images/index/icons/close-modal-black@2x.png" alt="Luk vinduet">
+            </div>
+            <div class="modal-bottom">
+                <h5 class="modal-subheading">subheading</h5>
+                <hr>
+                <h6 class="modal-subsubheading">Subsubheading</h6>
+                <p class="modal-paragraph">Paragraph</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ESCAPE GAME DEFINITION MOBILE MODAL SLUT -->
+    <!-- MODALS SLUT -->
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

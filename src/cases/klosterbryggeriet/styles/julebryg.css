@@ -1,0 +1,393 @@
+/* 
+-------------------------------------------
+HEADER
+-------------------------------------------
+*/
+
+.hero-image-container {
+  background: url("../images/julebryg/hero/julebryg-hero-50q-353w.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 300px;
+}
+
+.hero-image-container span {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
+  border-left: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+/* 
+-------------------------------------------
+MAIN
+-------------------------------------------
+*/
+
+
+/* intro */
+
+div#christmas-beer-intro-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 6.25rem;
+}
+
+div#christmas-beer-intro-wrapper img {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+div#christmas-beer-intro-wrapper p {
+  font-size: 1.125rem;
+}
+
+/* har givet 'hemmelige opskrifter' særlig id, fordi jeg gerne vil ramme det 
+specifikt og ændre font og letter spacing så det passer med 'ciestercienserordnens'
+i billedet ovenfor */
+
+div#christmas-beer-intro-wrapper p#secret-recipe {
+  font-family: "Vollkorn SC", serif;
+  text-transform: lowercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.08125rem;
+}
+
+/* økologisk jul section */
+
+/* coat of arms/våbenskjolds container */
+div.coat-of-arms-master-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+div#oekologisk-jul-coat-of-arms-container.coat-of-arms-wrapper
+  div.middle-rectangle-horizontal,
+div#jule-stout-coat-of-arms-container.coat-of-arms-wrapper
+  div.middle-rectangle-horizontal {
+  min-width: 170px;
+}
+
+div#oekologisk-jul-coat-of-arms-container,
+div#jule-stout-coat-of-arms-container,
+div#mini-coat-of-arms-container-1,
+div#mini-coat-of-arms-container-2,
+div#mini-coat-of-arms-container-3,
+div#mini-coat-of-arms-container-4 {
+  padding-top: 6.25rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+div#oekologisk-jul-coat-of-arms-container,
+div#jule-stout-coat-of-arms-container {
+  margin: 0 auto;
+}
+
+div#oekologisk-jul-coat-of-arms-container div.middle-rectangle-horizontal p {
+  letter-spacing: 2px;
+}
+
+div#oekologisk-jul-coat-of-arms-container div.middle-rectangle-horizontal p,
+div#oekologisk-jul-coat-of-arms-container h2 {
+  color: var(--dark-blue);
+}
+
+div#oekologisk-jul-coat-of-arms-container div.coat-of-arms-image-container {
+  height: 15.25rem;
+  width: auto;
+  background: url("../images/julebryg/oeko-jul-mountain-225w.png") center center /
+    cover no-repeat;
+}
+
+div.bottom-rectangle-horizontal {
+  height: 7.875rem;
+}
+
+div.bottom-rectangle-horizontal p {
+  max-width: 14.0625rem;
+  font-weight: 300;
+}
+
+/* marketing quote */
+
+div.marketing-quote {
+  padding-top: 4.375rem;
+}
+
+div.marketing-quote p {
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.125rem;
+}
+
+div.marketing-quote:last-of-type {
+  padding-bottom: 4.6875rem;
+}
+
+div.marketing-quote p.marketing-hook {
+  padding: 1rem 0 0;
+  font-family: "Vollkorn SC", serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: var(--gold);
+}
+
+img.christmas-beer-ingredients {
+  justify-self: center;
+  margin: 1.375rem auto 0;
+  width: 100%;
+  height: auto;
+  max-width: 21.5625rem;
+}
+
+/* ingrediens-wrapper */
+
+div.ingredients-wrapper {
+  padding: 0 1rem 0;
+  margin: 0 auto;
+  max-width: 21.5625rem;
+}
+
+div.ingredients-wrapper div.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gold);
+  height: 2.3125rem;
+}
+
+div.ingredients-wrapper div.title-container,
+div.ingredients-wrapper hr {
+  margin: 0 auto;
+  max-width: 21.5625rem;
+}
+
+div.ingredients-wrapper hr {
+  margin-bottom: 1.5rem;
+}
+
+div.ingredients-wrapper div.title-container h3 {
+  font-size: 1.5625rem;
+  font-weight: 600;
+}
+
+article#oekologisk-jul-intro {
+  background-color: var(--dark-blue);
+}
+
+article#oekologisk-jul-intro div.ingredients-wrapper div.title-container h3 {
+  color: var(--dark-blue);
+}
+
+div.ingredients-wrapper p {
+  letter-spacing: 0.125rem;
+  line-height: 2.5rem;
+  padding: 1.25rem 0 3.125rem;
+}
+
+/* jule stout section */
+
+article#jule-stout-intro {
+  background-color: var(--dark-red);
+}
+
+div#jule-stout-coat-of-arms-container div.middle-rectangle-horizontal p,
+div#jule-stout-coat-of-arms-container h2 {
+  color: var(--dark-red);
+}
+
+div#jule-stout-coat-of-arms-container div.middle-rectangle-horizontal p {
+  letter-spacing: 2px;
+}
+
+div#jule-stout-coat-of-arms-container div.coat-of-arms-image-container {
+  height: 15.25rem;
+  width: auto;
+  background: url("../images/julebryg/jule-stout-mountain-225w.png") center
+    center / cover no-repeat;
+}
+
+article#jule-stout-intro div.ingredients-wrapper div.title-container h3 {
+  color: var(--dark-red);
+}
+
+/* mini coat of arms/våbenskjolds container */
+
+#mini-coat-of-arms-container-1,
+#mini-coat-of-arms-container-2,
+#mini-coat-of-arms-container-3,
+#mini-coat-of-arms-container-4 {
+  padding: 0;
+  margin: 0;
+}
+
+div.mini-coat-of-arms-container {
+  display: none;
+  width: 12.5rem;
+}
+
+#mini-coat-of-arms-container-1 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  width: auto;
+  background: url("../images/monks/mini-coat-of-arms/munk-som-snitter-i-loeg-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-2 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  background: url("../images/monks/mini-coat-of-arms/smilende-munk-ved-tønde-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-3 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  width: auto;
+  background: url("../images/monks/mini-coat-of-arms/munk-i-gyngestol-250w.png")
+    center center / cover no-repeat;
+}
+
+#mini-coat-of-arms-container-4 div.coat-of-arms-image-container {
+  height: 10.0625rem;
+  background: url("../images/monks/mini-coat-of-arms/sort-klaedt-munk-nipper-til-oel-250w.png")
+    center center / cover no-repeat;
+}
+
+div.mini-coat-of-arms-container div.empty-rectangle-horizontal {
+  height: 0.625rem;
+}
+
+div.mini-coat-of-arms-container div.empty-rectangle-vertical {
+  width: 2.375rem;
+}
+
+div.mini-coat-of-arms-container div.top-rectangle-horizontal {
+  height: 1.125rem;
+}
+
+div.mini-coat-of-arms-container div.bottom-rectangle-horizontal {
+  height: 3rem;
+}
+
+/* sneeffekt */
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+
+#snow-wrapper {
+  background: rgb(28,47,65);
+background: linear-gradient(180deg, rgba(28,47,65,1) 0%, rgba(37,62,85,1) 25%, rgba(43,70,98,1) 49%, rgba(49,80,112,1) 100%);
+}
+
+#christmas-beer-intro-wrapper {
+  background-image: url("../images/julebryg/snow/snow.png"),
+    url("../images/julebryg/snow/snow3.png"),
+    url("../images/julebryg/snow/snow2.png");
+  animation: snow 25s linear infinite;
+}
+
+@media only screen and (min-width: 377px) {
+  div#oekologisk-jul-coat-of-arms-container.coat-of-arms-wrapper
+    div.top-rectangle-horizontal,
+  div#jule-stout-coat-of-arms-container.coat-of-arms-wrapper
+    div.top-rectangle-horizontal {
+    min-width: 21.5625rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-image-container {
+    background: url("../images/julebryg/hero/julebryg-hero-75q-961w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    div.mini-coat-of-arms-container {
+      display: block;
+    }
+
+    div#oekologisk-jul-coat-of-arms-container,
+    div#jule-stout-coat-of-arms-container {
+      margin: 0 5.5rem 0;
+    }
+
+    div#oekologisk-jul-coat-of-arms-container,
+    div#jule-stout-coat-of-arms-container {
+      width: 26.25rem;
+    }
+
+    div#oekologisk-jul-coat-of-arms-container div.coat-of-arms-image-container {
+      background: url("../images/julebryg/oeko-jul-mountain-450w.png") center
+        center / cover no-repeat;
+    }
+
+    div#jule-stout-coat-of-arms-container div.coat-of-arms-image-container {
+      background: url("../images/julebryg/jule-stout-mountain-450w.png") center
+        center / cover no-repeat;
+    }
+
+    div#oekologisk-jul-coat-of-arms-container div.coat-of-arms-image-container,
+    div#jule-stout-coat-of-arms-container div.coat-of-arms-image-container {
+      height: 20.625rem;
+    }
+
+    div.coat-of-arms-wrapper {
+      max-width: 26.25rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    div.coat-of-arms-wrapper h2 {
+      font-size: 30px;
+    }
+
+    div.coat-of-arms-wrapper div.middle-rectangle-horizontal p {
+      font-size: 22px;
+    }
+
+    div.ingredients-wrapper {
+      padding: 0 1rem 0;
+      margin: 0 auto;
+      max-width: 66.125rem;
+    }
+
+    div.marketing-quote {
+      display: none;
+    }
+
+    div.ingredients-wrapper hr {
+      transform: translateY(135px);
+      margin-top: 7.5rem;
+    }
+
+    div.ingredients-wrapper div.title-container {
+      transform: translateY(130px);
+    }
+
+    img.christmas-beer-ingredients {
+      max-width: 66.125rem;
+    }
+
+    p#oekologisk-jul-ingredient-description {
+      text-align: right;
+    }
+  }
+}

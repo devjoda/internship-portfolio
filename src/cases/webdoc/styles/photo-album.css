@@ -1,0 +1,30 @@
+.main {
+  background: url('../images/overview/bg.jpg') center center / cover no-repeat;
+}
+
+.left-page img,
+.right-page img {
+  padding: 2rem;
+  display: block;
+  width: 95%;
+  max-width: 350px;
+}
+
+.left-page,
+.right-page {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1440px) {
+  .left-page,
+  .right-page {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(100px, 1fr)) / repeat(2, calc(100% / 2));
+  }
+
+  .left-page img,
+  .right-page img {
+    max-width: 500px;
+  }
+}

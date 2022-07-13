@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="/joachimdanielsen.dk/styles/eric-meyers-reset.css">
+    <link href="styles/style.css" rel="stylesheet">
+    <base href="/src/cases/bmiCalculator/">
+</head>
+
+<body>
+    <article class="article calculator__article">
+        <section class="section calculator__section">
+            <h1 class="calculator__heading">body mass index calculator</h1>
+            <p class="calculator__instruction">input weight and height to calculate your bmi</p>
+            <label class="calculator__label" for="weight">weight (kg)</label>
+            <input class="calculator__text-field" id="weight" type="text" name="weight" required>
+            <label class="calculator__label" for="weight">height (m)</label>
+            <input class="calculator__text-field" id="height" type="text" name="height" required>
+            <input class="calculator__button" type="button" value="submit" onclick="updateResultInDOM()">
+        </section>
+
+        <section class="section result__section">
+            <p class="result__bmi-value"></p>
+            <p class="result__bmi-value"></p>
+            <p class="result__bmi-class"></p>
+            <p class="result__bmi-class"></p>
+            <img class="result__image" id="stickman">
+        </section>
+    </article>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

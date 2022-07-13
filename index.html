@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joachim Danielsen's portefølje. Ambitiøs og hårdtarbejdende front-end studerende søger praktikplads.">
+  <meta name="author" content="Joachim Danielsen">
+  <!-- normalize -->
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="src/css/main.css">
+  <!-- boxicon -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Zeyada&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e87042">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- script -->
+  <script src="src/js/script.js" defer></script>
+  <title>Joachim Danielsen | Portefølje</title>
+</head>
+
+<body>
+  <!-- hero wrapper -->
+  <div class="wrapper">
+    <div class="parallax__group">
+      <!-- parallax layers -->
+      <div class="parallax__layer layer0"></div>
+      <div class="parallax__layer layer1"></div>
+      <div class="parallax__layer layer2"></div>
+      <div class="parallax__layer layer3"></div>
+      <div class="parallax__layer layer4"></div>
+      <nav class="parallax__layer navigation__top">
+        <!-- top logo wrapper -->
+        <div class="wrapper__logo-top">
+          <a href="index.html">
+            <!-- top logo small -->
+            <picture class="logo-top__small">
+              <source type="image/svg+xml" srcset="src/img/logo/logo.svg">
+              <img src="src/img/logo/logo-small.png" alt="Brand logo">
+            </picture>
+            <!-- top logo big -->
+            <picture class="logo-top__big">
+              <source type="image/svg+xml" srcset="src/img/logo/logo.svg">
+              <img src="src/img/logo/logo-big.png" alt="Brand logo">
+            </picture>
+          </a>
+        </div>
+        <div class="wrapper__links">
+          <ul>
+            <li class="link__about-me"><a class="link__desktop" href="#about-me">Om mig</a></li>
+            <li class="link__cases"><a class="link__desktop" href="#cases">Cases</a></li>
+            <li class="link__skills"><a class="link__desktop" href="#skills">Færdigheder</a></li>
+            <li class="link__internship"><a class="link__desktop" href="#internship">Praktik</a></li>
+            <li class="link__contact"><a class="link__desktop" href="#contact">Kontakt</a></li>
+            <li class="link__cv"><a href="src/docs/resume-joachim-danielsen.pdf">Resume <i class='bx bx-download'></i></a></li>
+            <li id="burger-menu__open"><i class='bx bx-menu'></i></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- hero text 1 -->
+      <div class="parallax__layer wrapper__hero-text-1">
+        <span class="hero-text-1__name heading">Joachim</span>
+        <span class="hero-text-1__name hero-text-1__surname heading">Danielsen</span>
+        <span class="hero-text-1__occupation heading">studerende, digitalt design</span>
+      </div>
+      <!-- hero text 2 -->
+      <div class="parallax__layer wrapper__hero-text-2">
+        <span class="hero-text-2">per aspera ad astra</span>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <section id="about-me" class="section__about-me">
+      <div class="background-image__marsman fade fadeOut">
+        <h2 class="heading">Om mig</h2>
+      </div>
+      <div class="wrapper__i-am-a-1">
+        <div class="container__i-am-a--left">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">programm<span class="grow">ø</span>r</span><br>
+            <span class="i-am-a__line-3">og jeg skriver læsbar, vedligeholdelsesvenlig og gennemtestet kode</span>
+          </p>
+        </div>
+        <div class="container__i-am-a--right">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">designer</span><br>
+            <span class="i-am-a__line-3">og jeg synes det er fedt at arbejde med såvel form som funktion</span>
+          </p>
+        </div>
+        <div class="container__i-am-a--left">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">sci-fi fan</span><br>
+            <span class="i-am-a__line-3">og jeg elsker at dykke ned i et indlevende og futuristisk univers</span>
+          </p>
+        </div>
+        <div class="container__i-am-a--right">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">nysgerrig</span><br>
+            <span class="i-am-a__line-3">og jeg er ikke bange for at stille spørgsmål for at blive klogere</span>
+          </p>
+        </div>
+      </div>
+      <div class="wrapper__i-am-a-2"></div>
+      <div class="wrapper__i-am-a-3">
+        <div class="container__i-am-a--left">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">empatisk</span><br>
+            <span class="i-am-a__line-3">og jeg er opmærksom på at dem omkring mig har det godt</span>
+          </p>
+        </div>
+        <div class="container__i-am-a--right">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">metodisk</span><br>
+            <span class="i-am-a__line-3">og jeg synes det er interessant at lære om designprincipper</span>
+          </p>
+        </div>
+        <div class="container__i-am-a--left">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">organiseret</span><br>
+            <span class="i-am-a__line-3">og jeg kan godt lide når tingene er sat i system og kommer i de rette kasser</span>
+          </p>
+        </div>
+        <div class="container__i-am-a--right">
+          <p><span class="i-am-a__line-1">Jeg er</span>
+            <span class="i-am-a__line-2">humoristisk</span><br>
+            <span class="i-am-a__line-3">og bliver glad og energisk når jeg kan være det sammen med andre</span>
+          </p>
+        </div>
+      </div>
+      <div class="wrapper__i-am-a-4"></div>
+    </section>
+
+    <!-- cases section -->
+    <section id="cases" class="section__cases">
+      <!-- <div class="background-image__earth-view"></div> -->
+      <div class="background-image__moon-surface"></div>
+      <h2 class="heading">Cases</h2>
+      <div class="case-container">
+        <a href="src/cases/peepfeed/index.html"><img id="peepfeed" class="case__main-image" src="src/img/work/peepfeed-static.gif" alt="Mockup af Peepfeed projekt"></a>
+      </div>
+      <div class="message__info"><i class='bx bx-info-circle'></i><span>interaktiv</span></div>
+      <div class="case-container">
+        <a href="src/cases/klosterbryggeriet/index.html"><img id="klosterbryggeriet" class="case__main-image" src="src/img/work/klosterbryggeriet-static.gif" alt="Mockup af Klosterbryggeriet projekt"></a>
+      </div>
+      <div class="message__info"><i class='bx bx-info-circle'></i><span>interaktiv</span></div>
+      <div class="case-container">
+        <a href="src/cases/city-escape/index.html"><img id="city-escape" class="case__main-image" src="src/img/work/city-escape-static.gif" alt="Mockup af City Escape projekt"></a>
+      </div>
+      <div class="message__info"><i class='bx bx-info-circle'></i><span>interaktiv</span></div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills" class="section__skills">
+      <div class="background-image__empty-void">
+        <h2 class="heading"><wbr>Færdig<wbr>heder</h2>
+      </div>
+      <div class="container__skills-wrapper">
+        <section class="coding">
+          <h3>Programmering</h3>
+          <div class="container__icon-skills-wrapper">
+
+            <a href="https://dev.w3.org/html5/spec-LC/">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/html-5.svg">
+                  <img src="src/img/section/skills/icons/html-5.png" alt="HTML5">
+                </picture>
+                <span>HTML5</span>
+              </div>
+            </a>
+
+            <a href="https://www.w3.org/Style/CSS/specs.en.html">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/css-3.svg">
+                  <img src="src/img/section/skills/icons/css-3.png" alt="CSS3">
+                </picture>
+                <span>CSS3</span>
+              </div>
+            </a>
+
+            <a href="https://262.ecma-international.org/12.0/" target="_blank">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/js.svg">
+                  <img src="src/img/section/skills/icons/js.png" alt="JS">
+                </picture>
+                <span>JS</span>
+              </div>
+            </a>
+
+            <a href="http://getbem.com/" target="_blank">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/bem.svg">
+                  <img src="src/img/section/skills/icons/bem.png" alt="BEM">
+                </picture>
+                <span>BEM</span>
+              </div>
+            </a>
+
+            <a href="https://wordpress.com/">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/wordpress.svg">
+                  <img src="src/img/section/skills/icons/wordpress.png" alt="WP">
+                </picture>
+                <span>WP</span>
+              </div>
+            </a>
+
+            <a href="https://www.docker.com/">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/docker.svg">
+                  <img src="src/img/section/skills/icons/docker.png" alt="Docker">
+                </picture>
+                <span>Docker</span>
+              </div>
+            </a>
+
+            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/c-sharp.svg">
+                  <img src="src/img/section/skills/icons/css-3.png" alt="C#">
+                </picture>
+                <span>C#</span>
+              </div>
+            </a>
+
+            <a href="https://docs.oracle.com/en/java/">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/java.svg">
+                  <img src="src/img/section/skills/icons/java.png" alt="Java">
+                </picture>
+                <span>Java</span>
+              </div>
+            </a>
+
+          </div>
+        </section>
+        <section class="design">
+          <h3>Design</h3>
+          <div class="container__icon-skills-wrapper">
+
+            <a href="https://www.figma.com/">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/figma.svg">
+                  <img src="src/img/section/skills/icons/figma.png" alt="Figma">
+                </picture>
+                <span>Figma</span>
+              </div>
+            </a>
+
+            <a href="https://www.adobe.com/products/xd.html">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/adobe-xd.svg">
+                  <img src="src/img/section/skills/icons/adobe-xd.png" alt="Xd">
+                </picture>
+                <span>Xd</span>
+              </div>
+            </a>
+
+            <a href="https://www.adobe.com/products/photoshop.html">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/adobe-photoshop.svg">
+                  <img src="src/img/section/skills/icons/adobe-photoshop.png" alt="Ps">
+                </picture>
+                <span>Ps</span>
+              </div>
+            </a>
+
+            <a href="https://www.adobe.com/products/illustrator.html">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/adobe-illustrator.svg">
+                  <img src="src/img/section/skills/icons/adobe-illustrator.png" alt="Ai">
+                </picture>
+                <span>Ai</span>
+              </div>
+            </a>
+
+            <a href="https://www.adobe.com/products/premiere.html">
+              <div class="container__icon-skills">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/skills/icons/adobe-premiere.svg">
+                  <img src="src/img/section/skills/icons/adobe-premiere.png" alt="Pr">
+                </picture>
+                <span>Pr</span>
+              </div>
+            </a>
+
+          </div>
+        </section>
+        <section class="underway">
+          <h3>Undervejs</h3>
+          <div class="wrapper__underway">
+            <div class="container__icon-skills-wrapper">
+              <a href="https://nodejs.dev/">
+                <div class="container__icon-skills">
+                  <picture>
+                    <source type="image/svg+xml" srcset="src/img/section/skills/icons/node-js.svg">
+                    <img src="src/img/section/skills/icons/node-js.png" alt="NodeJS">
+                  </picture>
+                  <span>Node.js</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- internship section -->
+    <section id="internship" class="section__internship-2022">
+      <div class="container__section_wrapper">
+        <div class="background-image__stargazing">
+          <h2 class="heading">Praktik 2022</h2>
+        </div>
+        <article class="article__internship-application">
+          <h3>Mangler din virksomhed en ambitiøs praktikant?</h3>
+          <div class="container__body-text">
+            <p>I forbindelse med min uddannelse på Erhvervsakademi Aarhus er jeg på udkig efter en praktikplads med start den <strong>3. januar 2022</strong>. </p>
+            <p>Jeg har gennem uddannelsen specialiseret mig indenfor <strong>front-end udvikling</strong>, og det er et stærkt ønske at finde en praktikplads, der er rettet mod dette. </p>
+            <p><strong>UI, UX</strong> og <strong>grafisk design</strong> optager mig også meget, og drømmescenariet er at lande et sted, hvor jeg også kan få lov til at være med inde over en eller
+              flere af de processer. </p>
+            <p>Min ambition for fremtiden er at dygtiggøre mig med henblik på at blive blandt de bedste indenfor mit felt. For at kunne indfri det mål, er det afgørende, at jeg finder en
+              virksomhed, som både har interessen og overskudet til at investere i mig og min udvikling. </p>
+            <p>I bytte får I en <strong>topmotiveret, hårdarbejdende praktikant</strong>, som meget vel kan ende med at blive en fast og fremtidig ressource i mange år frem. </p>
+          </div>
+        </article>
+        <div id="contact" class="background-image__rocket-launch">
+          <address>
+            <a href="mailto:dev.joda@gmail.com">dev.joda@gmail.com</a>
+            <a href="tel:+4531446893">31 44 68 93</a>
+          </address>
+          <div class="container__social-media">
+
+            <a href="https://github.com/devjoda" target="_blank">
+              <div class="container__icon-social-media">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/internship-2022/icons/github.svg">
+                  <img src="src/img/section/internship-2022/icons/github.png" alt="GitHub">
+                </picture>
+              </div>
+            </a>
+
+            <a href="https://codepen.io/sinbadthesailor" target="_blank">
+              <div class="container__icon-social-media">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/internship-2022/icons/codepen.svg">
+                  <img src="src/img/section/internship-2022/icons/codepen.png" alt="CodePen">
+                </picture>
+              </div>
+            </a>
+
+            <a href="https://dribbble.com/joachimdanielsen" target="_blank">
+              <div class="container__icon-social-media">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/internship-2022/icons/dribbble.svg">
+                  <img src="src/img/section/internship-2022/icons/dribbble.png" alt="Dribbble">
+                </picture>
+              </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCISkPXC_WW6lqUAwT54RGIA" target="_blank" id="youtube-anchor">
+              <div class="container__icon-social-media">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/internship-2022/icons/youtube.svg">
+                  <img src="src/img/section/internship-2022/icons/youtube.png" alt="YouTube">
+                </picture>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/joachim-danielsen-210127a4/" target="_blank">
+              <div class="container__icon-social-media">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/internship-2022/icons/linkedin.svg">
+                  <img src="src/img/section/internship-2022/icons/linkedin.png" alt="LinkedIn">
+                </picture>
+              </div>
+            </a>
+
+            <a href="https://www.facebook.com/hahSuhDude/" target="_blank">
+              <div class="container__icon-social-media">
+                <picture>
+                  <source type="image/svg+xml" srcset="src/img/section/internship-2022/icons/facebook.svg">
+                  <img src="src/img/section/internship-2022/icons/facebook.png" alt="Facebook">
+                </picture>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="modal" class="--derender">
+    <div id="container__modal-inner">
+      <i class='bx bxs-x-circle --biggerClickableSurface'></i>
+      <h3>Modal title</h3>
+      <div>
+        <span></span>
+        <p></p>
+      </div>
+      <div class="container__keywords">
+        <span></span>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="container__modal-bottom">
+        <a id="prototype" target="_blank" href="#">Prototype</a>
+        <a id="live-demo" target="_blank" href="#">Live demo</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="wrapper__links-mobile">
+    <div></div>
+    <ul>
+      <li class="link__about-me-mobile"><a class="link__mobile" href="#about-me">Om mig</a></li>
+      <li class="link__cases-mobile"><a class="link__mobile" href="#cases">Cases</a></li>
+      <li class="link__skills-mobile"><a class="link__mobile" href="#skills">Færdigheder</a></li>
+      <li class="link__internship-mobile"><a class="link__mobile" href="#internship">Praktik</a></li>
+      <li class="link__contact-mobile"><a class="link__mobile" href="#contact">Kontakt</a></li>
+      <li id="burger-menu__close"><i class='bx bx-x'></i></li>
+    </ul>
+  </nav>
+</body>
+
+
+</html>
